@@ -1,0 +1,60 @@
+* Flow control means statements will be executed at RUN TIME.
+--> Selection
+--> Iterative
+--> Transfer
+
+// if else good examples
+public class ExampleIf{
+    public static void main(String args[]){
+        boolean b=false;
+        if(b=true){
+            System.out.println("Hello");
+        }else{
+            System.out.println("hi");
+        }}}
+OUTPUT:
+Hello
+
+if(true)
+    int x=10;
+OUTPUT
+    ERROR
+
+if(true){
+    int x=10;
+}
+OUTPUT:
+    No Error
+
+Semicolon(;) is a valid java statement which is call empty statement and it won't produce any output.
+
+
+//Switch statement
+ Curly braces are mandatory.(except switch case in all remaining cases curly braces are optional )
+ Both case and default are optional.
+ Every statement inside switch must be under some case (or) default. Independent statements are not allowed. 
+
+Every case label should be within the range of switch argument type.
+byte b=10;
+switch(b){
+    case 10:
+        System.out.println("10");
+    case 100:
+        System.out.println("100");
+    case 1000:
+        System.out.println("1000");
+}
+OUTPUT:
+Compile time error
+D:\Java>javac ExampleSwitch.java
+ExampleSwitch.java:10: possible loss of precision
+found : int
+required: byte
+case 1000:
+
+Duplicate case labels are not allowed
+'a' or 97 both are same things
+
+
+// While loop
+if we don't know the no of iterations in advance then best loop is while loop
